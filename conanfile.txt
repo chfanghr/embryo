@@ -1,0 +1,7 @@
+[requires]
+gtest/1.10.0
+fmt/6.1.2
+docopt.cpp/0.6.2
+
+[generators]
+cmake
