@@ -76,9 +76,9 @@ int32_t Time(const std::shared_ptr<api::LuaState> &state) {
         .tm_sec=static_cast<int>(GetField(state, "sec", 0)),
         .tm_min=static_cast<int>(GetField(state, "min", 0)),
         .tm_hour=static_cast<int>(GetField(state, "hour", 12)),
-        .tm_year=static_cast<int>(GetField(state, "year", -1)),
-        .tm_mon=static_cast<int>(GetField(state, "month", -1)),
         .tm_mday=static_cast<int>(GetField(state, "day", -1)),
+        .tm_mon=static_cast<int>(GetField(state, "month", -1)),
+        .tm_year=static_cast<int>(GetField(state, "year", -1)),
     };
     int64_t time_stamp = std::mktime(&given_time);
     state->PushInteger(time_stamp);
