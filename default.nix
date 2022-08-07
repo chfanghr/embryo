@@ -1,11 +1,11 @@
 { lib
-, llvmPackages_11
+, llvmPackages_14
 , cmake
 , spdlog
 , abseil-cpp
 }:
 
-llvmPackages_11.stdenv.mkDerivation rec {
+llvmPackages_14.stdenv.mkDerivation rec {
   pname = "embryo";
   version = "0.1.0";
 

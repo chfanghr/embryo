@@ -21,7 +21,8 @@
 
           packages = with pkgs; [
             # Development Tools
-            llvmPackages_11.clang
+            llvmPackages_14.clang
+            clang-tools_14
             cmake
             cmakeCurses
             treefmt
