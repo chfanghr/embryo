@@ -24,6 +24,10 @@
             llvmPackages_11.clang
             cmake
             cmakeCurses
+            treefmt
+            nixpkgs-fmt
+            cmake-format
+            luaformatter
 
             # Development time dependencies
             gtest

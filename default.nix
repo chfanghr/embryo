@@ -2,12 +2,13 @@
 , llvmPackages_11
 , cmake
 , spdlog
-, abseil-cpp }:
+, abseil-cpp
+}:
 
 llvmPackages_11.stdenv.mkDerivation rec {
   pname = "embryo";
   version = "0.1.0";
-  
+
   src = ./.;
 
   nativeBuildInputs = [ cmake ];

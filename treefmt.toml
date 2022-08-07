@@ -1,0 +1,15 @@
+[formatter.nix]
+command = "nixpkgs-fmt"
+includes = ["*.nix"]
+
+[formatter.c]
+command = "clang-format"
+includes = ["*.cc", "*.c"]
+
+[formatter.cmake]
+command = "cmake-format"
+includes = ["*.cmake"]
+
+[formatter.lua]
+command = "lua-format"
+includes = ["*.lua"]
