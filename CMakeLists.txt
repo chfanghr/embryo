@@ -28,16 +28,6 @@ ENDIF ()
 ADD_COMPILE_OPTIONS("$<$<CONFIG:DEBUG>:-DDEBUG>")
 ADD_COMPILE_OPTIONS(-Werror -Wall -Wno-unknown-pragmas)
 
-IF (EXISTS ${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
-  INCLUDE(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
-  CONAN_BASIC_SETUP()
-ELSE ()
-  MESSAGE(
-      FATAL_ERROR
-      "The file conanbuildinfo.cmake doesn't exist, you have to run conan install first"
-  )
-ENDIF ()
-
 IF (UNIX AND NOT APPLE)
   SET(LINUX TRUE)
 ENDIF ()
