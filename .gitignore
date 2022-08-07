@@ -44,3 +44,13 @@ build
 .floo
 .flooignore
 embryo-snapshot-*
+
+# Nix Outputs
+result/
+
+# Version File
+include/embryo/version.h
+
+# VSCode Shit
+.vscode
+.cache
